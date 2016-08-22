@@ -13,6 +13,7 @@ namespace MvcBootStrap.Controllers
 
         public ActionResult Index()
         {
+            var a = 0;
             return View();
         }
         public ActionResult Myview()
