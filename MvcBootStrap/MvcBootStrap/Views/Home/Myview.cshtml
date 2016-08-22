@@ -1,0 +1,320 @@
+﻿@{
+    ViewBag.Title = "Myview";
+}
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<link href="~/css/responsive-calendar.css" rel="stylesheet" />
+<div class=" container ">
+    <ul class="breadcrumb " style=" background-color: #D3D3D3;margin-bottom:0.0px">
+        <li>
+            <a href="#"> Home</a>
+        </li>
+        <li> <a href="Home/Myview.cshtml"> CourseInformation</a> </li>
+        <li> <a href="#"> CurriculumStructure</a></li>
+        <li class="active">Add Curriculum</li>
+    </ul>
+
+    <table class="table table-bordered" style=" width :500px">
+        <tr>
+            <td width=" 160px" style=" background-color :#D3D3D3">
+                <a> <span class="glyphicon glyphicon-education"></span>Education Glyph</a>
+            </td>
+            <td width=" 160px"><span class="glyphicon glyphicon-education"></span></td>
+            <td width=" 160px"><span class="glyphicon glyphicon-education"></span></td>
+        </tr>
+    </table>
+
+    <div class="panel panel-default" style="margin-left:20px;margin-right :20px;  ">
+        <div class="panel-heading">
+            <div class=" row">
+                <div class="col-lg-2">
+
+                    <img src="~/image/download.jpg" class="img-responsive" alt="Cinque Terre" width="60" height="150" />
+                </div>
+                <div class="col-lg-2">
+                    <label style=" font-size: small;">Date: </label>
+                    <input type="text" class="form-group form-control">
+                </div>
+                <div class="col-lg-2">
+                    <label style=" font-size: small;">Cycle: </label>
+                    <input type="text" class="form-group form-control">
+                </div>
+                <div class="col-lg-2">
+                    <label style=" font-size: small;">Grade: </label>
+                    <input type="text" class="form-group form-control">
+                </div>
+                <div class="col-lg-2">
+                    <label style=" font-size: small;">Class: </label>
+                    <input type="text" class="form-group form-control">
+                </div>
+
+                <div class="col-lg-2">
+                    <button type="button" style=" margin-top :20px" class="btn btn-primary">Preview</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel panel-default" style="margin-left:20px;margin-right :20px;  ">
+        <div class="panel-heading">
+
+        </div>
+        <div class="panel-body">
+            @*<div style="width:400px;overflow:auto ;height:300px; ">*@
+
+
+            <div class=" row ">
+                <div class="col-lg-6">
+
+                    <table class="table table-bordered table-striped" style="width:500px;height :250px">
+                        <tr>
+                            <td colspan=" 3">
+                                <label style=" font-size: small;">Absent Student</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label style=" font-size: small;">Name</label>
+                            </td>
+                            <td style=" width :10px">
+                                <label style=" font-size: small;">Excused</label>
+                            </td>
+                            <td>
+                                <label style=" font-size: small;">Comments</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Yes</td>
+                            <td></td>
+                        </tr>
+
+                        <tr><td></td><td>No</td><td></td></tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-6">
+                    <table class="table table-bordered table-striped" style="width:520px;height :250px">
+                        <tr>
+                            <td colspan=" 4">
+                                <label style=" font-size: small;">Absent Student</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label style=" font-size: small;">Name</label>
+                            </td>
+                            <td style=" width :10px">
+                                <label style=" font-size: small;">Excused</label>
+                            </td>
+                            <td>
+                                <label style=" font-size: small;">Time</label>
+                            </td>
+                            <td>
+                                <label style=" font-size: small;">Comments</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Yes</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=" col-lg-12">
+                    <button type="button" style=" margin-top :0px;margin-left :975px" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+            <div class=" row ">
+                <div class=" col-lg-6">
+                    <table class="table table-bordered table-striped" style="width:1065px;height :250px">
+                        <tr>
+                            <td style=" width :30px">
+                                <label style=" font-size: small;">AlterNateId</label>
+                            </td>
+                            <td>
+                                <label style=" font-size: small;">Student Name</label>
+                            </td>
+                            <td style="width:250px ">
+                                <label style=" font-size: small;">Attendance</label>
+                            </td>
+                            <td style="width:15px ">
+                                <label style=" font-size: small;">Excused</label>
+                            </td>
+                            <td style="width:180px">
+                                <label style=" font-size: small;">Comments</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td >
+    <!-- Responsive calendar - START -->
+
+    <div class="responsive-calendar" style="height:100px ">
+
+        <div class="controls">
+            <a class="pull-left" data-go="prev">
+                <div class="btn btn-primary">Prev</div>
+            </a>
+
+            <h4><span data-head-year></span> <span data-head-month></span></h4>
+
+            <a class="pull-right" data-go="next"><div class="btn btn-primary">Next</div></a>
+
+        </div><hr />
+        <div class="day-headers">
+            <div class="day header">Mon</div>
+
+            <div class="day header">Tue</div>
+            <div class="day header">Wed</div>
+
+            <div class="day header">Thu</div>
+            <div class="day header">Fri</div>
+
+            <div class="day header">Sat</div>
+            <div class="day header">Sun</div>
+
+        </div>
+        <div class="days" data-group="days">
+
+        </div>
+
+    </div>
+    <!-- Responsive calendar - END -->
+
+</td>
+                            <td style="width:260px;">
+                                <div class=" row">
+                                    <div class="col-md-1">
+
+                                        <img src="~/image/a1.png" style="width:20px;height:20px;  " />
+                                    </div>
+                                    <div class="col-md-1">
+                                        
+                                        <label><input style="width:20px;height :20px;" data-toggle="tooltip" type="checkbox" value=""></label>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <label><input style="width:20px;height :20px;  " type="checkbox" value=""></label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-group form-control">
+                                    </div>
+                                </div>
+                                <div class=" row">
+                                    <div class="col-md-1">
+                                        
+                                    </div>
+                                    <div class="col-md-1">
+
+                                    </div>
+                                    <div class="col-md-1">
+                                        <label><input style="width:20px;height :20px;  " type="checkbox" value=""></label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-group form-control">
+                                    </div>
+                                </div>
+                                
+                                
+                            </td>
+                            <td style="width:15px ">
+                                <div class="checkbox" style="margin-left:10px  ">
+                                    <label><input style="width:20px;height:20px;position :center " type="checkbox" value=""></label>
+                                </div>
+                            </td>
+                            <td style="width:180px">
+                                <input type="text" class="form-group form-control">
+                                <input type="text" class="form-group form-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td >
+                                <div class=" row">
+                                    <div class="col-md-1">
+
+                                        <img src="~/image/a1.png" style="width:20px;height:20px;  " />
+                                    </div>
+                                    <div class="col-md-1">
+
+                                        <label><input style="width:20px;height :20px;  " type="checkbox" value=""></label>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <label><input style="width:20px;height :20px;  " type="checkbox" value=""></label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-group form-control">
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:15px">
+                                <div class="checkbox" style="margin-left:10px;  ">
+                                    <label><input style="width :20px;height:20px; position:center " type="checkbox" value=""></label>
+                                </div>
+                            </td>
+                            <td style="width:180px">
+                                <input type="text" class="form-group form-control">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="5">
+                                <button type="button" style=" margin-top :0px;margin-left :975px" class="btn btn-primary">Save</button>
+                            </td>
+                           
+                        </tr>
+                       
+                    </table>
+                </div>
+            </div>
+            @*</div>*@
+        </div>
+    </div>
+</div>
+
+<script src="~/js/jquery.js"></script>
+<script src="~/js/responsive-calendar.js"></script>
+<script src="~/js/responsive-calendar.min.js"></script>
+
+<script type="text/javascript">
+     
+   $(document).ready(function ()
+{
+        $(".responsive-calendar").responsiveCalendar({
+          time: '2016-03',
+          events: {
+
+       "2016-04-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
+
+      "2016-04-26": {"number": 1, "url": "http://w3widgets.com"},
+
+         "2016-05-03":{"number": 1},
+            "2016-03-22": {}}
+
+     });
+   });
+   $(document).ready(function () {
+       $('[data-toggle="tooltip"]').tooltip();
+   });
+</script>

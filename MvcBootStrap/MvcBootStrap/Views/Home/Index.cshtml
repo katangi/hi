@@ -1,0 +1,373 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="~/Scripts/bootstrap.min.js"></script>
+@*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+<script src="~/Scripts/jquery-1.8.2.js"></script>
+<script src="~/Scripts/bootstrap-slider.js"></script>
+<script src="~/Scripts/bootstrap-slider.min.js"></script>
+<link href="~/Content/bootstrap-slider.css" rel="stylesheet" />
+<link href="~/Content/bootstrap-slider.min.css" rel="stylesheet" />
+
+<style>
+    .breadcrumb > li + li:before {
+        color: gray;
+        content: ">";
+        padding: 0 5px;
+    }
+
+    #ex1Slider .slider-selection {
+        background: #BABABA;
+    }
+
+    #breadcrumbs {
+        padding: 0;
+        margin: 0;
+        height: 30px;
+        line-height: 30px; /* line-height MUST be the same as height */
+        list-style-type: none;
+        background: #CCCCCC;
+        width: 509px;
+    }
+
+        #breadcrumbs li {
+            float: left; /*ie6/7 needs this */
+        }
+
+        #breadcrumbs a {
+            float: left;
+            position: relative;
+            padding: 0 20px 0 10px;
+            color: #000000;
+            text-decoration: none;
+            outline: none;
+        }
+
+            #breadcrumbs a:hover {
+                text-decoration: underline;
+            }
+
+            #breadcrumbs a.odd {
+                background: #e9e9e9;
+            }
+
+        #breadcrumbs span {
+            position: absolute;
+            display: block;
+            line-height: 0px;
+            height: 0px;
+            width: 0px;
+            right: 0px;
+            top: 0px;
+            border-left: 10px solid #CCCCCC;
+            border-right: none;
+            border-top: 15px solid #e9e9e9;
+            border-bottom: 15px solid #e9e9e9;
+        }
+
+        #breadcrumbs a.odd span {
+            border-left: 10px solid #e9e9e9;
+            border-top: 15px solid #CCCCCC;
+            border-bottom: 15px solid #CCCCCC;
+        }
+
+        #breadcrumbs a.hover {
+            text-decoration: none;
+            /*background: #999999;*/
+            background: #ff66ff;
+        }
+
+        #breadcrumbs a span.hover {
+            border-left: 10px solid #ff66ff;
+        }
+
+        #breadcrumbs a span.pre_hover {
+            border-top: 15px solid #ff66ff;
+            border-bottom: 15px solid #ff66ff;
+        }
+</style>
+
+<div class="container">
+
+    <ul class="breadcrumb " style=" background-color: #D3D3D3">
+        <li>
+            <a href="#"> Home</a>
+        </li>
+        <li> <a href="Home/Myview.cshtml"> CourseInformation</a> </li>
+        <li> <a href="#"> CurriculumStructure</a></li>
+        <li class="active">Add Curriculum</li>
+    </ul>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+
+            <ul id="breadcrumbs" class=" nav">
+
+                <li><a href="#" class="odd">Add Course<span class="arrow"></span></a></li>
+                <li><a href="#">Main Information<span class="arrow"></span></a></li>
+                <li><a href="#" class="odd">Genral Attributes<span class="arrow last"></span></a></li>
+                <li><a href=" #"> Grading & Skills <span class="arrow "></span></a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-7">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2">
+                    <label style=" font-size: small;">Course Name(EN)*: </label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" style="width:250px " class="form-group form-control">
+                </div>
+                <div class="col-lg-4">
+                    <div class="radio">
+                        <label ><input type="radio" style="height:18px; width:18px; vertical-align: middle;"  name="optradio"> This is Standard Curriculum </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small; ">Course Name(AR)*: </label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" style="width:250px " class="form-group form-control">
+                </div>
+                <div class="col-lg-3">
+
+
+                    <div class="radio">
+                        <label > <input type="radio" style="height:18px; width:18px; vertical-align: middle;"  name="optradio"> This is Standard Curriculum </label>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+
+                    <select class="form-control" id="sel1">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Course Name(FR)*: </label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" style="width:250px " class="form-group form-control">
+                </div>
+                <div class="col-lg-3">
+                    <div class="radio" style="font-size: small; ">
+                        <label ><input type="radio" style="height:18px; width:18px; vertical-align: middle;"  name="optradio"> This is a Part Of Curriculum </label>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-control" id="sel1">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Course Code(EN)*: </label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" style="width:200px " class="form-group form-control">
+                </div>
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Course Type*: </label>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-control" id="sel1">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Course Code(AR)*: </label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" style="width:200px " class="form-group form-control">
+                </div>
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Program*: </label>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-control" id="sel1">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Course Code(FR)*: </label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" style="width:200px " class="form-group form-control">
+                </div>
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Department*: </label>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-control" id="sel1">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Course Short Name(EN)*: </label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" style="width:200px " class="form-group form-control">
+                </div>
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Subject*: </label>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-control" id="sel1">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Course Short Name(AR)*: </label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" style="width:200px " class="form-group form-control">
+                </div>
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Course Group*: </label>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-control" id="sel1">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Course Short Name(FR)*: </label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" style="width:200px " class="form-group form-control">
+                </div>
+                <div class="col-lg-2">
+                   
+                </div>
+                <div class="col-lg-3">
+                  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="rg-from" style="font-size: small;">Course Description: </label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" style="width:260px;height:75px; " class="form-group form-control">
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="rg-from" class="form-group " style="font-size: small; ">Grade Range*: </label>
+                        </div>
+                        <div class="col-md-8">
+                            <input id="ex1" data-slider-id='ex1Slider' type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" />
+                            @*<input id="ex1" data-slider-id='ex1Slider' class="form-group form-control" type="text" data-slider-min="10" data-slider-max="20" data-slider-step="5" data-slider-value="14" />*@
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="rg-from" class="form-group " style="font-size: small; ">Prerequisties*: </label>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-group form-control" id="sel1">
+                                <option>Enable only for elective course </option>
+                                <option>English-Eng </option>
+                                <option>English Special-EnSp</option>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class=" col-md-0.2">
+                            <span class="glyphicon glyphicon-plus-sign"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-4">
+
+                    </div>
+                    <div class="col-lg-4">
+
+                    </div>
+                    <div class="col-lg-8">
+                        <button type="button" style="color :white  ;" class="btn btn-primary">Save & Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $('#ex1').slider({
+        tooltip: 'always',
+        formatter: function (value) {
+            debugger;
+            return 'Gr ' + value;
+        }
+    });
+    $("#breadcrumbs a").hover(
+    function () {
+        $(this).addClass("hover").children().addClass("hover");
+        $(this).parent().prev().find("span.arrow:first").addClass("pre_hover");
+    },
+    function () {
+        $(this).removeClass("hover").children().removeClass("hover");
+        $(this).parent().prev().find("span.arrow:first").removeClass("pre_hover");
+    }
+);
+
+</script>
